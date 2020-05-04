@@ -11,14 +11,17 @@ script:
 
 language: generic
 
-deploy:
-    provider: elasticbeanstalk
-    region: "us-east-2"
-    app: "docker-react"
-    env: "DockerReact-env"
-    bucket_name: "elasticbeanstalk-us-east-2-002528515977"
-    bucket_path: "docker-react"
-    on:
-        branch: master
-    access_key_id: "$AWS_ACCESS_KEY"
-    secret_access_key: "$AWS_SECRET_KEY"
+# The keys have been removed and are no longer valid so
+# commenting this section out so it doesn't try to deploy
+# to AWS
+#deploy:
+#    provider: elasticbeanstalk
+#    region: "us-east-2"
+#    app: "docker-react"
+#    env: "DockerReact-env"
+#    bucket_name: "elasticbeanstalk-us-east-2-002528515977"
+#    bucket_path: "docker-react"
+#    on:
+#        branch: master
+#    access_key_id: "$AWS_ACCESS_KEY"
+#    secret_access_key: "$AWS_SECRET_KEY"
